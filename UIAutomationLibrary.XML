@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UIAutomationLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:UIAutomationLibrary.UIAutomation.Main(System.String[])">
+            <summary>
+            Click UI object:
+            args[0] = "Condition"
+            args[1] = "Click"
+            args[2] = "left"
+            Click Image:
+            args[0] = "E:\modelImage.png"
+            args[1] = "ClickImageInScreen"
+            args[2] = "left"
+            </summary>
+        </member>
+        <member name="T:UIAutomationLibrary.UIAutomationClass">
+            <summary>
+            UIAutomationClass
+            </summary>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.FindFirst(System.String)">
+            <summary>
+            Find First AutomationElement object according to condition
+            </summary>
+            <param name="Condition"></param>
+            <returns>successed AutomationElement object, unsuccesse null</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.RangeValue(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Set Range Value
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="value"></param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.Value(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Set Value
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="value"></param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.Invoke(System.Windows.Automation.AutomationElement)">
+            <summary>
+            Invoke
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.Scroll(System.Windows.Automation.AutomationElement,System.String,System.String)">
+            <summary>
+            Scroll
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="myHorizontalAmount">NoAmount /  NoScroll / LargeDecrement / LargeIncrement / SmallDecrement / SmallIncrement</param>
+            <param name="myVerticalAmount">NoAmount /  NoScroll / LargeDecrement / LargeIncrement / SmallDecrement / SmallIncrementl</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.SetScrollPercent(System.Windows.Automation.AutomationElement,System.String,System.String)">
+            <summary>
+            Set Scroll Percent
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="myHorizontalPercent">Percent or NoScroll</param>
+            <param name="myVerticalPercent">Percent or NoScroll</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ExpandCollapse(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Expand Collapse
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="option">option: Expand / Collapse</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.GridGetItem(System.Windows.Automation.AutomationElement,System.Int32,System.Int32)">
+            <summary>
+            Grid Get Item
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="row"></param>
+            <param name="column"></param>
+            <returns>successed GridItem AutomationElement object, unsuccesse null</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.GridGetItemName(System.Windows.Automation.AutomationElement,System.Int32,System.Int32)">
+            <summary>
+            Grid Get Item Name
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="row"></param>
+            <param name="column"></param>
+            <returns>successed Item Name, unsuccesse exception message</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.MultipleView(System.Windows.Automation.AutomationElement,System.Int32,System.String)">
+            <summary>
+            MultipleView
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="viewId"> View ID</param>
+            <param name="option"> option: GetViewName / SetCurrentView</param>
+            <returns>successed ViewName when option is GetViewName, 1 when option is SetCurrentView, unsuccesse exception message or null</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.WindowClose(System.Windows.Automation.AutomationElement)">
+            <summary>
+            Window Close
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.SetWindowVisualState(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Set Window Visual State
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="option"> option: Normal / Maximized / Minimized</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.SelectionItem(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Selection Item
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="option"> option: AddToSelection / RemoveFromSelection / Select</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.Dock(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Set Dock Position
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="myDockPosition">option: Bottom / Fill / Left / None / Right / Top</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.TableGetItem(System.Windows.Automation.AutomationElement,System.Int32,System.Int32)">
+            <summary>
+            Table Get Item
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="row"></param>
+            <param name="column"></param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.Toggle(System.Windows.Automation.AutomationElement)">
+            <summary>
+            Toggle
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.TransformMove(System.Windows.Automation.AutomationElement,System.Int32,System.Int32)">
+            <summary>
+            Transform Move
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="x">x</param>
+            <param name="y">y</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.TransformResize(System.Windows.Automation.AutomationElement,System.Int32,System.Int32)">
+            <summary>
+            Transform Resize
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="width">width</param>
+            <param name="height">height</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.TransformRotate(System.Windows.Automation.AutomationElement,System.Int32)">
+            <summary>
+            Transform Rotate
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="degrees">degrees</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ScrollItem(System.Windows.Automation.AutomationElement)">
+            <summary>
+            Scroll Into View
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ControlExists(System.Windows.Automation.AutomationElement)">
+            <summary>
+            Check whether there is AutomationElement in screen
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.SetFocus(System.Windows.Automation.AutomationElement)">
+            <summary>
+            Set Focus
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.WalkControlElements(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Walk Control Elements
+            </summary>
+            <param name="rootElement">Automation Element object</param>
+            <param name="n">number of split char</param>
+            <returns>none</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.WriteToText(System.String)">
+            <summary>
+            Wirte Data to txt
+            </summary>
+            <param name="text"></param>
+            <returns>none</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ReturnResult(System.String)">
+            <summary>
+            Wirte Data to txt
+            </summary>
+            <param name="result"></param>
+            <returns>none</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.Shortcut(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Create Shortcut
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="savePath"></param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.Click(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Click Automation Element object
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="leftOrRight">mouse button option :left / right</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.MouseClick(System.Int32,System.Int32,System.String)">
+            <summary>
+            Mouse Click.
+            </summary>
+            <param name="IncrementX">X</param>
+            <param name="IncrementY">Y</param>
+            <param name="leftOrRight">mouse button option :left / right</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.SendKeys(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Send Keys.
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="keys">Keys http://msdn.microsoft.com/zh-cn/library/system.windows.forms.sendkeys.send(v=vs.80).aspx </param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.DrawBruteForceMatch(System.String,System.Drawing.Bitmap,System.Int64@)">
+            <summary>
+            Draw the model image and observed image, the matched features and homography projection.
+            </summary>
+            <param name="modelImageFileName">The model image</param>
+            <param name="observedImageBitmap">The observed image</param>
+            <param name="matchTime">The output total time for computing the homography matrix.</param>
+            <returns>The model image and observed image, the matched features and homography projection.</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ImageMatch(System.String,System.Drawing.Bitmap,System.Double)">
+            <summary>
+            Check the model image and observed image, the matched features.
+            </summary>
+            <param name="modelImageFileName">The model image</param>
+            <param name="observedBitmap">The observed image</param>
+            <param name="rate">similarity</param>
+            <returns>The center point object of matched image</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ClickImageByForceMatch(System.String,System.String,System.String)">
+            <summary>
+            Click model image in a region by Force Matcher
+            </summary>
+            <param name="modelImageFileName">The model image's full name</param>
+            <param name="XYWidthHeight">Region's X, Y, Width, Height split by '/' such as "0/0/418/556"</param>
+            <param name="leftOrRight">mouse button option :left / right</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ClickImageRegion(System.String,System.String,System.String)">
+            <summary>
+            Click model image in a region
+            </summary>
+            <param name="modelImageFileName">The model image's full name</param>
+            <param name="XYWidthHeight">Region's X, Y, Width, Height split by '/' such as "0/0/418/556"</param>
+            <param name="leftOrRight">mouse button option :left / right</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ClickImageScreen(System.String,System.String)">
+            <summary>
+            Click model image in screen.
+            </summary>
+            <param name="modelImageFileName">The model image's full name</param>
+            <param name="leftOrRight">mouse button option :left / right</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ImageExistRegion(System.String,System.String)">
+            <summary>
+            Check whether there is model image in a region
+            </summary>
+            <param name="modelImageFileName">The model image's full name</param>
+            <param name="XYWidthHeight">Region's X, Y, Width, Height split by '/' such as "0/0/418/556"</param>
+            <returns>exist 1, not exist 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ImageExistScreen(System.String)">
+            <summary>
+            Check whether there is model image in screen
+            </summary>
+            <param name="modelImageFileName">The model image's full name</param>
+            <returns>exist 1, not exist 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.HoverImageRegion(System.String,System.String)">
+            <summary>
+            hover model image in a region
+            </summary>
+            <param name="modelImageFileName">The model image's full name</param>
+            <param name="XYWidthHeight">Region's X, Y, Width, Height split by '/' such as "0/0/418/556"</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.HoverImageScreen(System.String)">
+            <summary>
+            hover model image in screen.
+            </summary>
+            <param name="modelImageFileName">The model image's full name</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+        <member name="M:UIAutomationLibrary.UIAutomationClass.ClickablePoint(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Click Automation Element object
+            </summary>
+            <param name="automationElement">Automation Element object</param>
+            <param name="leftOrRight">mouse button option :left / right</param>
+            <returns>successed 1, unsuccesse 0</returns>
+        </member>
+    </members>
+</doc>
